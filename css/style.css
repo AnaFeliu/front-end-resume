@@ -1,3 +1,9 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
 * {
   padding:0;
   margin:0;
@@ -8,46 +14,91 @@
   overflow: auto;
 }
 
-.education-entry, .work-entry, .project-entry {
-  padding-left: 5%;
-  padding-right: 5%;
+#header {
+  background-color: #FFFFFF;
 }
 
 h1 {
-  font-size: 40px;
-  color: #F5A623;
-  line-height: 48px;
+  font-size: 50px;
+  color: #800080;
   display: inline;
+}
+
+.role {
+  font-style: italic;
+}
+
+img {
+  padding: 10px;
+  max-width: 100%;
+}
+
+.biopic {
+  float: right;
+  width: 80px;
+  border-radius: 60px;
+  margin: 30px 0 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  text-align: center;
+  display: inline;
+  padding: 0 30px 0 0;
+  font-weight: bold;
+  color: #909090;
+}
+
+.contact-mode {
+  color: #23C5F5;
+  font-weight: normal;
+  display: inline;
+}
+
+.welcome-message {
+  font-style: italic;
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+}
+
+.fontawesome {
+  display: inline-block;
+  padding: 10px 5px 0 5px;
+  color: #909090;
+  font-size: 23px;
+}
+
+#workExperience, #projects, #education {
+  background-color: rgb(244, 244, 244);
+  clear: both;
+  margin: 0 70px 10px;
+  padding: 10px 0;
+  border-radius: 20px;
+}
+
+.education-entry, .work-entry, .project-entry, .online-entry {
+  padding: 0 5%;
 }
 
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999999;
-  line-height: 29px;
-  padding: 10px;
+  color: #800080;
 }
 
 h3 {
   font-style: italic;
   font-size: 20px;
-  color: #000000;
   line-height: 22px;
 }
 
-h4 {
-  font-weight: bold;
-  font-size: 14px;
-  color: #4A4A4A;
-  line-height: 17px;
+h2, h3 {
+  padding: 10px 5% 0;
 }
-
-h2, h3, h4, h5 {
-  padding:10px;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
 
 .date-text {
   font-style: italic;
@@ -69,54 +120,82 @@ h2, h3, h4, h5 {
 p {
   font-size: 14px;
   color: #333333;
-  line-height: 21px;
+  padding: 5px 0;
+  text-align: justify;
+}
+
+.inline-p {
+  display: inline;
 }
 
 a {
-  color: #1199C3;
+  color: #23C5F5;
   text-decoration: none;
-  margin-top: 10px;
+  margin: 10px 0 0;
   display: block;
 }
 
-.welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #F3F3F3;
-  line-height: 28px;
+a:hover {
+  color: #800080;
+  text-decoration: underline;
 }
 
-#skillsH3 {
-  color: #F5AE23;
-  display: none;
+#employer {
+  margin: 10px 0 0;
+  color: rgb(35, 197, 245);
 }
 
-.orange {
-  background-color: #F5AE23;
+.inline-links {
+  display: inline-block;
 }
 
-.orange-text {
-  color: #F5AE23;
+.projectpic {
+  width: 300px;
 }
 
-.white-text {
-  font-weight: bold;
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 5%;
+  border-radius: 20px;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding: 0 0 5%;
+}
+
+#footerContacts {
+  font-size: 14px;
+}
+
+.footer {
   color: #FFFFFF;
+  background-color: #800080;
+  text-align: center;
+  font-size: 18px;
+  padding: 2px
 }
 
-.gray {
-  background-color: #F3F3F3;
-  padding-bottom: 10px;
-  clear:both;
+.footer-icon {
+  font-size: 14px;
+  margin: 0;
+  color: #800080;
 }
 
-.dark-gray {
-  background-color: #4A4A4A;
+.internationalize-button {
+  text-align: center;
+  padding: 5px 0 0;
 }
 
-/* TODO: Replace with image later */
-#header {
-  background-color: #484848;
+button {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: rgb(144, 144, 144);
+  border-radius: 15px;
+  padding: 2px;
+  color: #800080;
 }
 
 .flex-box {
@@ -129,87 +208,60 @@ a {
 }
 
 .center-content {
-  padding-top: 2.5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 2.5%
-}
-
-ul {
-  list-style-type: none;
-}
-
-.biopic {
-  float: left;
-  padding: 10px;
-  width: 200px;
-  display: none;
-}
-
-img {
-  padding: 10px;
-}
-
-/* Bar chart stuff */
-.chart div {
-  font: 10px sans-serif;
-  background-color: #4A4A4A;
-  text-align: right;
-  padding: 3px;
-  margin: 1px;
-  height: 12px;
-  color: white;
-  display: inline-block;
+  padding: 2.5% 5% 0.5%;
 }
 
 span {
   padding: 5px;
 }
 
-#letsConnect {
-  text-align: center;
-}
-
 @media only screen and (max-width: 1024px) {
   #letsConnect {
-    margin-top: 5%;
+    margin: 36px 0 0;
   }
 }
 
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
+@media only screen and (max-width: 900px) {
+  #workExperience, #projects, #education {
+    margin: 0 45px 5px;
   }
 }
 
-@media only screen and (max-width: 750px) {
-  #letsConnect {
-    margin-top: 10%;
+@media only screen and (max-width: 800px) {
+  #workExperience, #projects, #education {
+    margin: 5px;
+  }
+  #map {
+    margin: 0 5px 5px;
+  }
+  #topContacts {
+    display: none;
+    margin: 0
   }
   .biopic {
-    width: 150px;
+    width: 80px;
+    display: none;
   }
   .welcome-message {
     display: none;
   }
+  #h3-skills {
+    display: none;
+  }
+  #skills {
+    display: none;
+  }
+  #header-hr {
+    display: none;
+  }
+  .footer-contact {
+    display: none;
+  }
 }
 
-#map {
-  display: block;
-  height: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-#mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
-}
-
-@media only screen and (min-width: 750px) {
-  #skillsH3,
-  .biopic {
+@media only screen and (max-width: 610px) {
+  h1 {
+    font-size: 40px;
     display: block;
   }
 }
